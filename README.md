@@ -1,9 +1,13 @@
 ## Usage
 
+```
+  npm install -S ssr-style-loader
+```
+
 - ## server
   ```
   // server
-  import { IsomorphicCss } from 'react-ssr-critical-styles';
+  import { IsomorphicCss } from 'ssr-style-loader';
   ...
   const cssArray = []
   const content = renderToString(
@@ -21,7 +25,7 @@
   ```
   import React, { Component } from 'react'
   import styles from 'app.css';
-  import { addStyles } from 'react-ssr-critical-styles';
+  import { addStyles } from 'ssr-style-loader';
 
   class App extends Component {
     render() {
