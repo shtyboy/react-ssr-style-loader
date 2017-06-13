@@ -1,7 +1,4 @@
-import React, {
-    Component,
-    Children
-} from 'react'
+import React, { Component, Children} from 'react'
 const PropTypes = require('prop-types');
 
 class IsomorphicCss extends Component {
@@ -9,26 +6,24 @@ class IsomorphicCss extends Component {
         super(props, context)
         this.pushCss = this.pushCss.bind(this)
     }
-    static contextTypes = {
-        cssArray: React.PropTypes.array
-    };
-    static childContextTypes = {
-        pushCss: PropTypes.funcs
-    };
     getChildContext() {
         return {
             pushCss: this.pushCss
         }
     }
     pushCss(css) {
-        const {
-            cssArray
-        } = this.props
+        const {cssArray} = this.props
         if (cssArray.indexOf(css) == -1)
             cssArray.push(css)
     }
     render() {
         return Children.only(this.props.children)
     }
+}
+IsomorphicCss.contextTypes = {
+    cssArray: React.PropTypes.array
+}
+IsomorphicCss.childContextTypes = {
+    pushCss: PropTypes.funcs
 }
 export default IsomorphicCss
