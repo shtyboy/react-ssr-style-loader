@@ -1,6 +1,6 @@
-import addStyles from './addStyles';
+import AddStyles from './AddStyles';
 import IsomorphicCss from './IsomorphicCss';
 export default {
-  addStyles,
+  AddStyles,
   IsomorphicCss
 }

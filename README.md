@@ -25,7 +25,7 @@
   ```
   import React, { Component } from 'react'
   import styles from 'app.css';
-  import { addStyles } from 'ssr-style-loader';
+  import { AddStyles } from 'ssr-style-loader';
 
   class App extends Component {
     render() {
@@ -33,5 +33,5 @@
     }
   }
 
-  export default addStyles(styles)(App);
+  export default AddStyles(styles)(App);
   ```
