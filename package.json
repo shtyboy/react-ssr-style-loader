@@ -1,6 +1,6 @@
 {
   "name": "ssr-style-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "critical style hocs for react server side rendering",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
