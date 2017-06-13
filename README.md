@@ -7,7 +7,7 @@
 - ## server
   ```
   // server
-  import { IsomorphicCss } from 'ssr-style-loader';
+  import { IsomorphicCss } from 'react-ssr-style-loader';
   ...
   const cssArray = []
   const content = renderToString(
@@ -25,7 +25,7 @@
   ```
   import React, { Component } from 'react'
   import styles from 'app.css';
-  import { AddStyles } from 'ssr-style-loader';
+  import { AddStyles } from 'react-ssr-style-loader';
 
   class App extends Component {
     render() {

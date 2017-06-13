@@ -1,6 +1,6 @@
 {
   "name": "react-ssr-style-loader",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "description": "critical style hocs for react server side rendering",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:shtyboy/ssr-style-loader.git"
+    "url": "git@github.com:shtyboy/react-ssr-style-loader.git"
   },
   "keywords": [
     "react",
